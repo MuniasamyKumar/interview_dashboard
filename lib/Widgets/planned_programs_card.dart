@@ -15,7 +15,7 @@ class PlannedProgramsCard extends StatelessWidget {
       child: Card(
         elevation: 5,
         color: Colors.white,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(1)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: SizedBox(
           width: double.maxFinite,
           child: Padding(
@@ -66,7 +66,7 @@ class PlannedProgramsCard extends StatelessWidget {
                   title: "Programs",
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 CustomPlannedProgramsRow(
                   color: Color(0xffC9F7F5),
@@ -74,7 +74,7 @@ class PlannedProgramsCard extends StatelessWidget {
                   title: "Mentors",
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 CustomPlannedProgramsRow(
                   color: Color(0xffEEE5FF),
@@ -82,7 +82,7 @@ class PlannedProgramsCard extends StatelessWidget {
                   title: "Mentees",
                 ),
                 SizedBox(
-                  height: 10,
+                  height: 65,
                 ),
               ],
             ),
@@ -94,74 +94,3 @@ class PlannedProgramsCard extends StatelessWidget {
 }
 
 
-
-
-// class TopProgramsCard extends StatelessWidget {
-//   const TopProgramsCard({
-//     super.key,
-//   });
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Padding(
-//       padding: const EdgeInsets.symmetric(horizontal: 10),
-//       child: Card(
-//         elevation: 5,
-//         color: Colors.white,
-//         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(1)),
-//         child: SizedBox(
-//           width: double.maxFinite,
-//           child: Padding(
-//             padding: const EdgeInsets.all(10),
-//             child: Column(
-//               children: [
-//                 Row(
-//                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-//                   children: [
-//                     Row(
-//                       spacing: 10,
-//                       children: [
-//                         CustomColorContainer(),
-//                         Text(
-//                           "Planned Programs",
-//                           style: TextStyle(
-//                               fontSize: 16,
-//                               color: Color(0xff18283D),
-//                               fontWeight: FontWeight.w600),
-//                         ),
-//                       ],
-//                     ),
-//                     ElevatedButton(
-//                         onPressed: () {},
-//                         style: ElevatedButton.styleFrom(
-//                             backgroundColor: Color(0xffDFEDFF),
-//                             shape: BeveledRectangleBorder(
-//                               borderRadius: BorderRadius.circular(3),
-//                             ),
-//                             minimumSize: Size(77, 40)),
-//                         child: Text(
-//                           "View All",
-//                           style: TextStyle(
-//                               color: Color(
-//                                 0xff18283D,
-//                               ),
-//                               fontSize: 12),
-//                         ))
-//                   ],
-//                 ),
-//                 CustomDivider(),
-//                 SizedBox(
-//                   height: 10,
-//                 ),
-//                add that table in this place 
-//                 SizedBox(
-//                   height: 10,
-//                 ),
-//               ],
-//             ),
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
