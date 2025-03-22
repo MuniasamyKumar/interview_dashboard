@@ -16,7 +16,7 @@ class ProgramModeMetricsCard extends StatelessWidget {
       child: Card(
         elevation: 5,
         color: Colors.white,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(1)),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: SizedBox(
           width: double.maxFinite,
           child: Padding(
