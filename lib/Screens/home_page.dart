@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
       ),
       endDrawer: CustomDrawer(),
       endDrawerEnableOpenDragGesture: false,
-      body: Obx(() => pages[controller.selectedIndex.value]),
+      body: SafeArea(child: Obx(() => pages[controller.selectedIndex.value])),
       bottomNavigationBar: CustomBottomNavicationBar(controller: controller),
     );
   }

@@ -14,6 +14,7 @@ class CustomDrawer extends StatelessWidget {
           spacing: 10,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(height: 10,),
             Text(
               "Admin",
               style: TextStyle(
@@ -30,7 +31,7 @@ class CustomDrawer extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                       offset: Offset(4, 4),
-                      color: Colors.black.withOpacity(0.1),
+                      color: Colors.black.withOpacity(0.2),
                       blurRadius: 8,
                       spreadRadius: 2,
                     ),

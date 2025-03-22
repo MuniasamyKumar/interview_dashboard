@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:interview_dashboard/Widgets/custom_drawer.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:interview_dashboard/Widgets/custom_indicator.dart';
 import 'package:interview_dashboard/Widgets/custom_title_bar.dart';
@@ -34,7 +35,8 @@ class _ProgramStatusMetricsCardState extends State<ProgramStatusMetricsCard> {
       _ChartData('Dec', 10, 18, 30),
     ];
     _tooltip = TooltipBehavior(enable: true);
-    _zoomPanBehavior = ZoomPanBehavior(enablePanning: true, zoomMode: ZoomMode.x);
+    _zoomPanBehavior =
+        ZoomPanBehavior(enablePanning: true, zoomMode: ZoomMode.x);
   }
 
   @override
@@ -52,16 +54,15 @@ class _ProgramStatusMetricsCardState extends State<ProgramStatusMetricsCard> {
             child: Column(
               children: [
                 CustomTitleBar(title: "Program Status Metrics"),
+                CustomDivider(),
                 const SizedBox(height: 10),
-
-
                 SfCartesianChart(
                   primaryXAxis: CategoryAxis(
                     majorGridLines: const MajorGridLines(width: 0),
                     edgeLabelPlacement: EdgeLabelPlacement.shift,
                     interval: 1,
                     visibleMinimum: 0,
-                    visibleMaximum: 3, 
+                    visibleMaximum: 3,
                   ),
                   primaryYAxis: NumericAxis(
                     minimum: 0,
@@ -95,15 +96,16 @@ class _ProgramStatusMetricsCardState extends State<ProgramStatusMetricsCard> {
                     ),
                   ],
                 ),
-
                 const SizedBox(height: 20),
-
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    CustomIndicator(color: const Color(0xff1D5BBF), type: "All programs"),
-                    CustomIndicator(color: const Color(0xff7E9FD4), type: "Active"),
-                    CustomIndicator(color: const Color(0xffC7DEFF), type: "Completed"),
+                    CustomIndicator(
+                        color: const Color(0xff1D5BBF), type: "All programs"),
+                    CustomIndicator(
+                        color: const Color(0xff7E9FD4), type: "Active"),
+                    CustomIndicator(
+                        color: const Color(0xffC7DEFF), type: "Completed"),
                   ],
                 ),
                 const SizedBox(height: 10),
