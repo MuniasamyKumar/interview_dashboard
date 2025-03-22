@@ -23,6 +23,7 @@ class _DashboardPageState extends State<DashboardPage> {
           if (constraints.maxWidth < 600) {
             return SingleChildScrollView(
               child: Column(
+                mainAxisSize: MainAxisSize.min,
                 spacing: 20,
                 children: [
                   PlannedProgramsCard(),
@@ -41,6 +42,7 @@ class _DashboardPageState extends State<DashboardPage> {
                 padding: const EdgeInsets.all(10.0),
                 child: Column(
                   spacing: 20,
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,

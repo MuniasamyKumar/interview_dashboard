@@ -26,9 +26,9 @@ class PlannedProgramsCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Row(
-                      spacing: 10,
                       children: [
                         CustomColorContainer(),
+                        SizedBox(width: 10),
                         Text(
                           "Planned Programs",
                           style: TextStyle(
@@ -56,7 +56,7 @@ class PlannedProgramsCard extends StatelessWidget {
                         ))
                   ],
                 ),
-                  CustomDivider(),
+                CustomDivider(),
                 SizedBox(
                   height: 10,
                 ),
@@ -92,5 +92,3 @@ class PlannedProgramsCard extends StatelessWidget {
     );
   }
 }
-
-

@@ -14,9 +14,9 @@ class CustomTitleBar extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Row(
-          spacing: 10,
           children: [
             CustomColorContainer(),
+            SizedBox(width: 10),
             Text(
               title,
               style: TextStyle(
@@ -27,36 +27,29 @@ class CustomTitleBar extends StatelessWidget {
           ],
         ),
         ElevatedButton(
-            onPressed: () {},
-            style: ElevatedButton.styleFrom(
-                backgroundColor: Color(0xffD9E4F2),
-                shape: BeveledRectangleBorder(
-                  borderRadius: BorderRadius.circular(3),
-                ),
-                minimumSize: Size(80, 40)),
-            child: Expanded(
-              child: Center(
-                child: Row(
-                  spacing: 5,
-                  children: [
-                    Text(
-                      "Month",
-                      style: TextStyle(color: Color(0xff1D5BBF), fontSize: 12),
-                    ),
-                    SizedBox(
-                      height: 20,
-                      width: 10,
-                      child: Expanded(
-                        child: Icon(
-                          Icons.keyboard_arrow_down_rounded,
-                          color: Color(0xff1D5BBF),
-                        ),
-                      ),
-                    )
-                  ],
-                ),
+          onPressed: () {},
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Color(0xffD9E4F2),
+            shape: BeveledRectangleBorder(
+              borderRadius: BorderRadius.circular(3),
+            ),
+            minimumSize: Size(80, 40),
+          ),
+          child: Row(
+            children: [
+              Text(
+                "Month",
+                style: TextStyle(color: Color(0xff1D5BBF), fontSize: 12),
               ),
-            )),
+              SizedBox(width: 5),
+              Icon(
+                Icons.keyboard_arrow_down_rounded,
+                color: Color(0xff1D5BBF),
+                size: 20,
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 class CustomIndicator extends StatelessWidget {
@@ -13,16 +12,16 @@ class CustomIndicator extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      spacing: 5,
       children: [
         CircleAvatar(
           radius: 5,
           backgroundColor: color,
         ),
+        SizedBox(width: 5),
         Text(
           type,
           style: TextStyle(fontSize: 14, fontWeight: FontWeight.w400),
-        )
+        ),
       ],
     );
   }

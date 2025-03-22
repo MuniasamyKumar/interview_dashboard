@@ -14,7 +14,6 @@ class CustomPlannedProgramsRow extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      spacing: 20,
       children: [
         Container(
           height: 75,
@@ -29,6 +28,9 @@ class CustomPlannedProgramsRow extends StatelessWidget {
                 fontWeight: FontWeight.w700,
                 fontSize: 20),
           )),
+        ),
+        SizedBox(
+          width: 20,
         ),
         Text(
           title,

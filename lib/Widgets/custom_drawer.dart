@@ -97,6 +97,8 @@ class CustomDrawer extends StatelessWidget {
   }
 }
 
+
+
 class CustomDivider extends StatelessWidget {
   const CustomDivider({
     super.key,
@@ -106,8 +108,6 @@ class CustomDivider extends StatelessWidget {
   Widget build(BuildContext context) {
     return Divider(
       color: Color(0xffD9D9D9),
-      // indent: 10,
-      // endIndent: 10,
     );
   }
 }
